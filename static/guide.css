@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+body{
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.navebar{
+    width: 85%;
+    margin: auto;
+    height: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    justify-content: space-between;
+}
+
+.logo {
+/*   cursor: pointer; */
+/*   background-color: #FFEA11; */
+  margin-left: 5px;
+}
+
+.navebar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; 
+   /*padding: 0 20px; */
+    position: relative; 
+
+}
+
+.navebar ul li a {
+    text-decoration: none;
+    color:#FFEA11;
+    text-transform: capitalize;
+}
+
+.navebar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0; /*100% */
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navebar ul li:hover::after {
+    width: 100%;
+}
+
+.about-section{
+    background: url(../static/team_pics/guide.png) no-repeat left;
+    background-size: 55%;
+    background-color: #545454;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 30%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}

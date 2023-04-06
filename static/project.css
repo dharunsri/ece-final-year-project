@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+	background-image:url("https://www.boxfreshtech.co.za/sitepad-data/uploads/2021/06/5cfe14_30977ca5f4d04cc2a8977a980baf19a9_mv2.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+
+.navebar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+/*   cursor: pointer; */
+/*   background-color: #FFEA11; */
+  margin-left: 5px;
+}
+
+.navebar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; 
+   /*padding: 0 20px; */
+    position: relative; 
+
+}
+
+.navebar ul li a {
+    text-decoration: none;
+    color:#d7d7d7;
+    text-transform: capitalize;
+}
+
+.navebar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0; /*100% */
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navebar ul li:hover::after {
+    width: 100%;
+}
+
+
+
+/*about*/
+.about {
+    width: 30cm;
+    margin:  auto;
+    padding: 160px;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+
+.wrapwrap {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0;
+}
+
+
+.about h1 {
+    font-family: arial;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    height: 0px;
+    display: block;
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+.about p {
+    font-family: arial;
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.5pc;
+    word-spacing: 2px;
+    color: #e1e1e1;
+    font-size: 18px;
+}
+
+    .about p b {
+        font-style: italic;
+        color: #fff;
+        text-shadow: 2px 2px 2px #9E7F7F;
+    }
+
+.aboutlink {
+    position: fixed;
+    top: 200px;
+    left: 0;
+}
+
+    .aboutlink a {
+        color: #fff;
+        padding: 8px;
+        display: block;
+        width: 220px;
+        background: rgba(0,0,0,.5);
+        margin: 5px;
+        text-align: left;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+        .aboutlink a:hover {
+            margin-left: 30px;
+            padding-left: 30px;
+            transition: ease all .4s;
+        }
+
+.aboutinfo {
+    background: #9E7F7F;
+    padding: 5px;
+    width: 100vw;
+    height: 100vh;
+}
+
+    .aboutinfo div {
+        width: 50vw;
+        position: relative;
+        top: 10%;
+        height: auto;
+        padding: 100px;
+        text-align: center;
+        background: rgba(0,0,0,.5);
+        padding: 30px;
+        color: #fff;
+        margin: 50px auto;
+    }
+
+        .aboutinfo div ul {
+            display: flex;
+        }
+
+            .aboutinfo div ul li {
+                float: left;
+                margin: 15px;
+            }
+
+    .aboutinfo p {
+        text-align: left;
+    }
+
+    .aboutinfo h2 {
+        color: #ffffff;
+        text-align: left;
+        margin: 10px;
+        clear: both;
+    }

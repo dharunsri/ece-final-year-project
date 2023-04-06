@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project Guide</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='guide.css') }}">
+</head>
+<body>
+    <div class="navebar">
+        <a href="http://127.0.0.1:5000/"><img class="logo" src="../static/images/logo.png" loading="lazy"  width="50px" height="90px"  ></a>
+        <ul>
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="{{url_for('my_team')}}">My Team</a></li>
+            <li><a href="{{url_for('guide')}}">Our Project Guide</a></li>
+            <li><a href="{{url_for('project')}}">About Project</a></li>
+        </ul>
+    </div>
+    <div class="about-section">
+        <div class="inner-container">
+          <h1>Thanking MR.N.Jayapal</h1>
+          <p class="text">
+            To express my sincere gratitude for your invaluable guidance and support throughout our project titled "Identification of Partially Visible Characters in Documents Using Advanced Image Processing Techniques."
+
+Your vast knowledge and expertise in the field of image processing has been instrumental in helping us navigate through the complex challenges that we faced during the project. Your timely feedback, constructive criticism, and insightful suggestions have been invaluable in shaping our ideas and refining our approach towards achieving the project objectives.
+
+Your commitment to ensuring that we understood the project requirements, and your ability to explain complex concepts in simple terms has been a great source of motivation for us. Your encouragement and belief in our abilities have inspired us to work harder and smarter towards completing this project successfully.
+          </p>
+          <div class="skills">
+            <span>M.E.,(Phd)</span>
+            <span>Asst.Prof/ECE</span>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

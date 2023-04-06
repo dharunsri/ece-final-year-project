@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='project.css') }}">
+    <title>About Project</title>
+</head>
+<body>
+    <div class="navebar">
+        <a href="http://127.0.0.1:5000/"><img class="logo" src="../static/images/logo.png" loading="lazy"  width="50px" height="90px"  ></a>
+        <ul>
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="{{url_for('my_team')}}">My Team</a></li>
+            <li><a href="{{url_for('guide')}}">Our Project Guide</a></li>
+            <li><a href="{{url_for('project')}}">About Project</a></li>
+        </ul>
+    </div>
+
+<div class="wrapwrap">
+    <div class="about">
+        
+            <h1>About - Identification of partially visible characters in documents using advanced image processing techniques</h1>
+            <p>The accurate recognition of characters in images or scanned documents is a critical task in many applications, including document digitization, optical character recognition (OCR), and data extraction. However, recognizing characters in poor quality scans or images with obstructions or deformations can be challenging. The study focuses on overcoming the common problems associated with poorly scanned documents, such as low resolution, image deformations, shadows and glare, background noise, and partially obscured characters. To address these challenges, the study employs various algorithms, including thresholding, morphological operations, edge detection, and pattern recognition. These techniques allow for the extraction and recognition of partially visible characters with improved accuracy. The results demonstrate the effectiveness of these advanced image processing techniques in overcoming the limitations of traditional OCR techniques, and provide a more reliable and accurate solution for character recognition in difficult scanning conditions.        
+            </p>
+        
+    </div>
+</div>
+    
+</body>
+</html>

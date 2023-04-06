@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="website1" content="This is the first practice html+css website">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="../static/images/icon.png">
+    <title>Project</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="navebar">
+            <a href="http://127.0.0.1:5000/"><img class="logo" src="../static/images/logo.png" loading="lazy"  width="50px" height="90px"  ></a>
+            <ul>
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li><a href="{{url_for('my_team')}}">My Team</a></li>
+                <li><a href="{{url_for('guide')}}">Our Project Guide</a></li>
+                <li><a href="{{url_for('project')}}">About Project</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="head">
+                <h1>Final Year Project</h1>
+                <h2>Identification of partially visible characters in documents using advanced image processing techniques.</h2>
+            </div>
+
+            <div class="btns">
+                <h4>Upload the document here.</h4>
+            <form action="{{ url_for('index') }}" method="POST" enctype="multipart/form-data">
+                <input name="file" type="file" id="images" accept=".png, .jpg, .jpeg, .doc, .docx" required><br>
+               <button type="submit"><span></span>GENERATE</button>
+            </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
